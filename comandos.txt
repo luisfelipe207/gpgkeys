@@ -1,0 +1,16 @@
+    1  gpg
+    2  gpg--fullgpg --full-generate-key
+    3  gpg --full-generate-key
+    4  ls /home/codespace/.gnupg/
+    5  gpg --output documento.txt.gpg --encrypt --recipient "luis felipe ferreira" documento.txt
+    6  cat doecumento.txt.gpg
+    7  cat documento.txt.gpg
+    8  gpg --output documento_decifrado.txt --decrypt documento.txt.gpg
+    9  gpg --output documento_assinado txt.gpg --sign documento.txt
+   10  gpg --output documento_assinado.txt.gpg --sign documento.txt
+   11  gpg --verify documento_assinado.txt.gpg
+   12  gpg --output chave_publica.asc --armor --export "luis felipe ferreira"
+   13  gpg --output cahve_privada.asc --armor --export-secret-keys "luis felipe ferreira"
+   14  gpg --keyserver hkps://keys.openpgp.org --recv-keys [ABAAEAA72484077A89B5B547E5562B83249B5B71]
+   15  gpg --keyserver hkps://keys.openpgp.org --recv-keys ABAAEAA72484077A89B5B547E5562B83249B5B71
+   16  history > comandos.txt
